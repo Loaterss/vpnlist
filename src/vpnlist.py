@@ -19,8 +19,8 @@ def main():
                 f = open(os.path.join(path, '{}-{}.ovpn'.format(src[0],src[6])), 'wb+')
                 f.write(base64.b64decode(src[14]))
                 f.close()
-            except IndexError:
-                pass
+        except IndexError:
+            pass
                
 if __name__ == "__main__":
     main()
