@@ -8,7 +8,7 @@ path = os.path.join(os.path.expanduser('~'), '.openvpn')
 
 
 def main():
-    links = [x.split(',') for i,x in enumerate(requests.get(http://www.vpngate.net/api/iphone').text.split('\r\n')) if i>= 2]
+    links = [x.split(',') for i,x in enumerate(requests.get('http://www.vpngate.net/api/iphone').text.split('\r\n')) if i>= 2]
     
     if not os.path.exists(path):
         os.makedirs(path)
